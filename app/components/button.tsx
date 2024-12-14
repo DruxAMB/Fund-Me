@@ -10,7 +10,7 @@ interface ButtonPosition {
 
 export default function ButtonComponent() {
   const [showConfetti, setShowConfetti] = useState(false);
-  const [noButtonPosition, setNoButtonPosition] = useState<ButtonPosition>({ top: '50%', left: '50%' });
+  const [noButtonPosition, setNoButtonPosition] = useState<ButtonPosition>();
 
   const moveNoButton = () => {
     const randomTop = Math.random() * 80 + 10; // Random top position (10% to 90%)
@@ -23,7 +23,7 @@ export default function ButtonComponent() {
     setTimeout(() => setShowConfetti(false), 5000); // Hide confetti after 5 seconds
   };
 
-  const projectId =process.env.NEXT_PUBLIC_CDP_PROJECT_ID as string;
+  const projectId = process.env.NEXT_PUBLIC_CDP_PROJECT_ID as string;
   const address = "0x434d6c335a1739f6d18362Dd13B282930aBbdCDe";
 
   const onrampBuyUrl = getOnrampBuyUrl({
