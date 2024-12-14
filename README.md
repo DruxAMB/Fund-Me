@@ -1,5 +1,14 @@
-## Fund Me
-is a [Next.js](https://nextjs.org) project bootstrapped with [`create-onchain`]().
+<p align="center">
+  <picture>
+<img width="1478" alt="Screenshot 2024-10-07 at 7 02 36 PM" src="/public/fund-me.png">
+  </picture>
+</p>
+
+## Build a Fund Me dApp with Onchainkit
+
+<br />
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-onchain`]().
 
 
 ## Getting Started
