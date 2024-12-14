@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import Confetti from "react-confetti";
+import React, { useState } from "react";
+import Confetti from 'react-confetti';
 import { FundButton, getOnrampBuyUrl } from "@coinbase/onchainkit/fund";
 
 export default function ButtonComponent() {
