@@ -3,10 +3,14 @@
 import React, { useState } from "react";
 import Confetti from 'react-confetti';
 import { FundButton, getOnrampBuyUrl } from "@coinbase/onchainkit/fund";
+interface ButtonPosition {
+  top: string;
+  left: string;
+}
 
 export default function ButtonComponent() {
   const [showConfetti, setShowConfetti] = useState(false);
-  const [noButtonPosition, setNoButtonPosition] = useState(null);
+  const [noButtonPosition, setNoButtonPosition] = useState<ButtonPosition>({ top: '50%', left: '50%' });
 
   const moveNoButton = () => {
     const randomTop = Math.random() * 80 + 10; // Random top position (10% to 90%)

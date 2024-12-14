@@ -4,9 +4,7 @@ declare module 'react-confetti' {
     interface ConfettiProps {
       width?: number;
       height?: number;
-      numberOfPieces?: number;
-      recycle?: boolean;
-      // Add other props as needed based on the library's documentation
+      colors?: string[];
     }
   
     const Confetti: ComponentType<ConfettiProps>;
