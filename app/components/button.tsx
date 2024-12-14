@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Confetti from "react-confetti";
 import { FundButton, getOnrampBuyUrl } from "@coinbase/onchainkit/fund";
-import { useAccount } from "wagmi";
 
 export default function ButtonComponent() {
   const [showConfetti, setShowConfetti] = useState(false);
